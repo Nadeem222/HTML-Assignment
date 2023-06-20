@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "poppins", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
@@ -61,7 +61,9 @@ p {
     position: relative;
     /* background-blend-mode: lighten; */
 }
-
+.banner img{
+    background-blend-mode: lighten;
+}
 .banner .text {
     width: 50%;
     display: flex;
@@ -69,9 +71,10 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    font-size: 52px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    font-family: 'Roboto', sans-serif;
     color: #ffff;
+    font-weight: 600;
 
 }
 .banner .text p{
@@ -81,7 +84,49 @@ p {
 }
 
 .banner .text i {
-    font-family: 'Kablammo', cursive;
+    font-family: 'Seaweed Script', cursive; 
     font-weight: 600;
     color: #ffff;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about .aboutLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;     
+}
+.about .aboutLeft b{
+    font-size: 35px;
+    color: #C32C26;
+    font-weight: 600;
+    line-height: 35px;
+}
+.about .aboutLeft p{
+    color: #1A1A1A;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 78px;
+    font-family: 'roboto' , sans-serif;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.about .aboutRight{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
