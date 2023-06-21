@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F7FA;
 }
 
 .navbar {
@@ -61,9 +62,11 @@ p {
     position: relative;
     /* background-blend-mode: lighten; */
 }
-.banner img{
+
+.banner img {
     background-blend-mode: lighten;
 }
+
 .banner .text {
     width: 50%;
     display: flex;
@@ -77,47 +80,52 @@ p {
     font-weight: 600;
 
 }
-.banner .text p{
+
+.banner .text p {
     color: #ffff;
     font-weight: 800;
     font: bold;
 }
 
 .banner .text i {
-    font-family: 'Seaweed Script', cursive; 
+    font-family: 'Seaweed Script', cursive;
     font-weight: 600;
     color: #ffff;
 }
-.about{
+
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-.about .aboutLeft{
+.about .aboutLeft {
     width: 50%;
     display: flex;
     justify-content: center;
     margin-top: 60px;
-    margin-bottom: 60px;     
+    margin-bottom: 60px;
 }
-.about .aboutLeft b{
+
+.about .aboutLeft b {
     font-size: 35px;
     color: #C32C26;
     font-weight: 600;
     line-height: 35px;
 }
-.about .aboutLeft p{
+
+.about .aboutLeft p {
     color: #1A1A1A;
     font-size: 58px;
     font-weight: 600;
     line-height: 78px;
-    font-family: 'roboto' , sans-serif;
+    font-family: 'roboto', sans-serif;
     padding-left: 35px;
     padding-right: 35px;
 }
-.about .aboutRight{
+
+.about .aboutRight {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -129,4 +137,146 @@ p {
     line-height: 24px;
     padding-left: 35px;
     padding-right: 35px;
+}
+
+.cart {
+    display: flex;
+    max-width: 1180px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    /* border: solid red; */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 25px;
+    /* border: solid 2px black; */
+    transition: transform 0.5s;
+    background-color: #FFFFFF;
+}
+.row:hover{
+    transform: translateY(-5px);
+}
+
+.row .col-1 {
+    /* flex-basis: 40%; */
+    min-width: 200px;
+    transition: transform 0.5s;
+
+}
+
+.row .col-1 a img {
+    /* flex-basis: 40%; */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 30px;
+}
+.row .col-2{
+    font-size: 22.4px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #333333;
+    padding-bottom: 30px;
+}
+.row .col-3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.638px;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.row .button{
+    padding-bottom: 30px;
+}
+button{
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 12px 30px;
+    margin:  30px 0;
+    border-radius: 5px ;
+    transition: all 0.3s ease;
+    border: solid 1px #B9B9B9;
+}
+button:hover{
+    background: #563434;
+    color: #fff;
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 25px;
+    /* border: solid 2px black; */
+    transition: transform 0.5s;
+    background-color: #000;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.copyright span{
+    color: red;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
 }
