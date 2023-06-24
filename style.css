@@ -69,20 +69,6 @@ p {
     /* background-blend-mode: lighten; */
 }
 
-.banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.banner img {
-    background-blend-mode: lighten;
-}
-
 .banner .text {
     width: 50%;
     display: flex;
@@ -353,6 +339,9 @@ img {
     margin: auto;
 }
 
+.slideshow-container img{
+    border-radius: 5px;
+}
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
@@ -364,9 +353,9 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px 25px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -433,10 +422,12 @@ img {
     align-items: center;
     margin-bottom: 25px;
     width: 100%;
+    /* border: solid 3px black; */
 }
 
 .menu-banner img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .menu-left {
@@ -455,7 +446,9 @@ img {
 
 .menu-left img {
     border-radius: 10px;
-    height: 200px;
+    height: 180px;.
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .menu-right {
@@ -464,7 +457,7 @@ img {
     background-color: #FFFFFF;
     /* padding-left: 20px; */
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 80px;
     width: 480px;
     cursor: pointer;
     height: 200px;
@@ -472,22 +465,26 @@ img {
 
 .menu-right img {
     border-radius: 10px;
-    height: 200px;
+    height: 180px;
+    margin: 10px 0 0 15px ;
+    /* margin-top: 10px; */
 }
 
 
 .menu-con {
     display: flex;
+    margin-bottom: 20px;
     /* border: solid 2px green; */
 }
 
 .detail {
     position: relative;
     height: 200px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 15px;
     height: 200px;
     /* border: 3px solid red; */
+    width: 100%;
 }
 
 .price {
@@ -495,6 +492,9 @@ img {
     color: #FFFFFF;
     position: absolute;
     bottom: 30px;
+    width: fit-content;
+    padding: 2px 10px 2px 10px;
+    border-radius: 3px;
     /* border: 3px solid #8AC007; */
 }
 .menu-heading{
